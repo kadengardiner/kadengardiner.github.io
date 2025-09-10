@@ -1,0 +1,172 @@
+<!--
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Kaden Gardiner, UMass Lowell Computer Science, kaden_gardiner@student.uml.edu
+Copyright (c) 2025 by Kaden Gardiner. All rights reserved.
+Created by Kaden Gardiner on 9-6-2025 at 11:43 am
+The html in this file can be considered the building blocks of my first webpage.
+I chose to create a resume website that includes my education, work experience,
+coursework, skills, contact information, and projects. The webpage is structured
+using HTML elements such as divs, headings, lists, tables, and links. The layout
+is organized into sections for easy navigation.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Kaden Gardiner Resume</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <!-- h1 & 2 Name and career goal title -->
+      <h1>Kaden Gardiner</h1>
+      <h2>Aspiring Web Developer and Software Engineer</h2>
+    </div>
+
+    <!-- Main Content: wrapper for three column flex layout -->
+    <div class="content">
+
+      <!-- Sidebar: will contatin education, work history, and contact information  -->
+      <div class="sidebar">
+        <!-- h3 Education -->
+        <h3>Education</h3>
+        <ul>
+          <!-- Education unordered list -->
+          <li>University of Massachusetts Lowell</li>
+          <li>Pursuing Bachelor of Science in Computer Science</li>
+          <li>Pursuing Masters in Computer Science</li>
+          <li>Expected Undergrad Graduation: May 2026</li>
+          <li>Expected Masters Graduation: May 2027</li>
+          <li>Undergrad GPA: 3.5</li>
+        </ul>
+        <!-- Work experience h6 -->
+        <h6>Work Experience</h6>
+        <!-- job list used span to give the ability manipulate indivudal portions of the text in the CSS -->
+        <ul class="job-list">
+          <li>
+            <span class="job-title">Waiter / Food Runner</span> – 
+            <span class="job-company">Captain Parker’s Pub</span>
+            <span class="job-dates">| Summer 2023 – Present</span>
+          </li>
+          <li>
+            <span class="job-title">Waiter / Food Runner</span> – 
+            <span class="job-company">Clancy’s Seafood Restaurant</span>
+            <span class="job-dates">| Summer 2022 – Summer 2023</span>
+          </li>
+          <li>
+            <span class="job-title">Line Cook</span> – 
+            <span class="job-company">Cape Cod Inflatable Water Park</span>
+            <span class="job-dates">| Summer 2021</span>
+          </li>
+          <li>
+            <span class="job-title">Sailing Instructor</span> – 
+            <span class="job-company">Yarmouth Recreational Sailing</span>
+            <span class="job-dates">| Summer 2017 – 2020</span>
+          </li>
+          <li>
+            <span class="job-title">Volunteer Soccer Coach</span> – 
+            <span class="job-dates">Seasonal (Fall & Spring, 2019 – 2022)</span>
+          </li>
+        </ul>
+        <!-- Contact info class within the side bar -->
+        <div class="contact-info">
+          <!-- h5 contact information -->
+          <h5>Contact Information</h5>
+          <!-- contact information unordered list with clickable links -->
+            <ul>
+              <li>Email: <a href="mailto:kadengardinercs@gmail.com">kadengardinercs@gmail.com</a></li>
+              <li>Phone: +1 508-260-1696</li>
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/kaden-gardiner" target="_blank">linkedin.com/in/kaden-gardiner</a></li>
+              <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+            </ul>
+          </div>
+        <!-- CSS validation: passed -->
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+            </a>
+        </p>
+        <!-- HTML validation even though its not HTML5: passed -->
+        <p>
+            <a href="https://validator.w3.org/check?uri=referer">
+              <img style="border:0;width:88px;height:31px"
+                  src="photosNpdfs/valid-html401.png"
+                  alt="Valid HTML!" />
+            </a>
+        </p>
+      </div>
+
+      <!-- Headshot + Coursework + Contact, defines middle column, wrapped within the content class -->
+      <div class="headshotArea">
+        <!-- headshot jpeg, in photosNpdfs file -->
+        <img src="photosNpdfs/headshot.jpeg" class="profile-pic" alt="">
+        <!-- h5 relevant course work -->
+        <h5>Relevant Course Work</h5>
+        <!-- Relevant course work unordered list -->
+        <ul>
+          <li>COMP.2040 Advanced C++ programing</li>
+          <li>COMP.2010 Introduction to object-oriented software development C++</li>
+          <li>COMP.1020 Data Structures and Algorithms in C</li>
+          <li>COMP.1010 Intro to C programing</li>
+          <li>COMP.2030 Assembly Language Programing</li>
+          <li>COMP.3050 Computer Architecture</li>
+          <li>MATH.2190 Discrete Structures 1 and 2</li>
+        </ul>
+        <!-- Skills class within the headshot area -->
+        <div class="skills">
+          <h5>Skills</h5>
+            <ul>
+              <li>Object Oriented Programming in C and C++</li>
+              <li>Web Development: HTML, CSS, JavaScript</li>
+              <li>Version Control: GitHub</li>
+              <li>MIPS, Intex-x86, Mic1 assembly</li>
+              <li>Linux and Windows</li>
+            </ul>
+          </div>
+        </div>
+
+      <!-- Experience + Projects, defines right column, wrapped within the content class -->
+      <div class="experience">
+        <p>
+          My goal is to pursue a career in web development and software engineering,
+          where I can combine my technical skills, creativity, and problem-solving
+          ability to design applications that improve people’s lives. I am currently
+          completing my Bachelor’s and Master’s degrees in Computer Science at the
+          University of Massachusetts Lowell, and I’ve developed experience through
+          academic projects ranging from interactive websites to complex software
+          systems. I am particularly interested in front-end and full-stack
+          development, but I am also motivated to explore broader software
+          engineering roles that challenge me to learn and grow. Ultimately, I am
+          looking to join a collaborative, innovative environment where I can
+          contribute meaningful work and continue building expertise in modern
+          development practices.
+        </p>
+        <!-- Projects h4 -->
+      <h4>Projects</h4>
+        <!-- Projects table, each project links to a pdf in the photosNpdfs file -->
+        <table class="projects-table">
+          <tr><td><a href="photosNpdfs/TriangleFractal.pdf" target="_blank">Recursive Triangle Fractal in C++ using SFML</a></td></tr>
+          <tr><td><a href="photosNpdfs/Sokoban.pdf" target="_blank">Sokoban Block Pushing Game in C++ using SFML</a></td></tr>
+          <tr><td><a href= "photosNpdfs/DNAalignment.pdf" target="_blank">DNA alignment simulator in C++</a></td></tr>
+          <tr><td><a href="photosNpdfs/RandWriter.pdf" target="_blank">RandWriter in C++</a></td></tr>
+          <tr><td><a href="photosNpdfs/KronosLogParsing.pdf" target="_blank">Kronos Log Parsing in C++</a></td></tr>
+          <tr><td><a href="comingSoon.pdf" target="_blank">Coming Soon</a></td></tr>
+          <tr><td><a href="comingSoon.pdf" target="_blank">Coming Soon</a></td></tr>
+          <tr><td><a href="comingSoon.pdf" target="_blank">Coming Soon</a></td></tr>
+          <tr><td><a href="comingSoon.pdf" target="_blank">Coming Soon</a></td></tr>
+          <tr><td><a href="comingSoon.pdf" target="_blank">Coming Soon</a></td></tr>
+          <tr><td><a href="comingSoon.pdf" target="_blank">Coming Soon</a></td></tr>
+          <tr><td><a href="comingSoon.pdf" target="_blank">Coming Soon</a></td></tr>
+          <tr><td><a href="comingSoon.pdf" target="_blank">Coming Soon</a></td></tr>
+          <tr><td><a href="comingSoon.pdf" target="_blank">Coming Soon</a></td></tr>
+        </table>
+      </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

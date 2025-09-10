@@ -1,0 +1,230 @@
+/*
+File: style.css
+GUI Assignment: Creating Your First Web Page
+Kaden Gardiner, UMass Lowell Computer Science, kaden_gardiner@student.uml.edu
+Copyright (c) 2025 by Kaden Gardiner. All rights reserved.
+Created by Kaden Gardiner on 9-6-2025 at 11:43 am
+From what I have learned from this assingmnet is CSS is what helps bring a 
+vision to life. It is what makes a web page look good and be organized. Without
+CSS a web page is just a jumbilation of various text and images thrown together.
+The way I formatted my webpage is into 3 columns. The left column is a sidebar
+with my education, work experience and contact information. The middle column 
+is my headshot, relevant course work and skills. The right column is my career
+goal statement and a list of projects I have done.
+Overall purpose: Defines the layout and styling for a 3-column personal portfolio webpage, 
+including sidebar, headshot area, and main content with projects
+*/
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body: overall styling of the body, font, background color, text color, line height and flexbox for 3 column layout */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #618c5c;
+  color: #222;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header: styling of the header that holds my name and career focuses */
+.header {
+  background-color: rgb(208, 147, 101);
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #080809;
+  text-align: center;
+}
+
+.header h2 {
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  color: #080809;
+}
+
+/* Main content area: holds the three columns */
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: stretch;
+}
+
+/* Sidebar: styling of the left column that holds education, work experience and contact info */
+.sidebar {
+  width: 25%;
+  background-color: #8a7451;
+  color: rgb(21, 20, 20);
+  padding: 8px;
+  box-sizing: border-box;
+  border-right: 1px solid black;
+}
+
+.sidebar h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+  text-align: left;
+  margin-left: 3px;
+}
+
+.sidebar ul {
+  font-size: 12px;
+  list-style-type: disc;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.sidebar h6 {
+  font-size: 20px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+.sidebar p {
+  margin-left: 3px;
+}
+
+.sidebar p:first-of-type {
+  margin-top: 250px;
+}
+
+/* Job list: styling of my work experience list, a bit more to this than just simple bulleted lists */
+.job-list {
+  font-size: 12px;
+  text-align: left;
+  margin-left: 0px;
+}
+
+.job-list li {
+  margin-bottom: 8px;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.job-company {
+  font-style: italic;
+}
+
+.job-dates {
+  color: #333;
+}
+ /* contact info: styling of the contact info header and bulleted list */
+.contact-info ul {
+  list-style-type: disc;
+}
+
+.contact-info h5 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+
+/* headshot column: Styling of headshot, relevant course work header and bulleted list and skills header and bulleted list */
+.headshotArea {
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.headshotArea h5 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+.headshotArea ul {
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.experience h4 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 2px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Profile picture: styling of headshot */
+.profile-pic {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+/* experience: styling of the career goal message. Please note the third column
+   is the experience column, it orinally was going to have work experience but 
+   later that went in the side bar area */
+.experience {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.experience p {
+  font-size: 15px;
+  color: #222;
+  margin-top: 2px;
+
+  padding: 10px;
+  text-align: justify;
+  line-height: 1.5;
+  border: solid black 1px;
+}
+
+/* project table: styling of the table that holds all of the projects and their pdf links */
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.projects-table td {
+  margin-top: 2px;
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.projects-table a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+ /* notable: Hover effect for project links */
+.projects-table a:hover {
+  background-color: #ddd;
+  color: darkgreen;
+}
+
+/* Skills: styling of the skills header and bulleted list */
+.skills h5 {
+  font-size: 20px;
+  margin-bottom: 0px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.skills ul {
+  margin-top: 2px;
+  text-align: left;
+  list-style-type: disc;;
+}
